@@ -42,6 +42,7 @@ Url:            http://www.jfugue.org/
 Group:		Development/Java
 #
 Source0:        http://www.jfugue.org/jfugue-source.zip
+Source1:        build.patch
 BuildRequires:	jpackage-utils >= 1.6
 BuildRequires:	java >= 1.5
 Requires:	java >= 1.5
@@ -73,12 +74,13 @@ Javadoc for %{name}.
 %prep
 %{__rm} -fr %{buildroot}
 %setup -q -c -n %{name}-%{version}
-find . -name "*.jar" -exec %{__rm} -f {} \;
+%remove_java_binaries
+%patch0 -b .sav
 
 %build
 [ -z "$JAVA_HOME" ] && export JAVA_HOME=%{_jvmdir}/java 
-ant dist
-ant javadoc
+%{ant} dist
+%{ant} javadoc
 
 %install
 # jar
