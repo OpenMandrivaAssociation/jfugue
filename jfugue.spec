@@ -34,7 +34,7 @@
 
 Name:		jfugue
 Version:	3.2
-Release:	%mkrel 3
+Release:	%mkrel 1
 Epoch:		0
 Summary:        Java API for programming music
 License:        LGPL
@@ -64,7 +64,7 @@ complexities of MIDI.
 
 %package javadoc
 Summary:	Javadoc for %{name}
-Group:		Development/Documentation
+Group:		Development/Java
 Requires(post):   /bin/rm,/bin/ln
 Requires(postun): /bin/rm
 
