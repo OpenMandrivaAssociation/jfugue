@@ -75,7 +75,7 @@ Javadoc for %{name}.
 %{__rm} -fr %{buildroot}
 %setup -q -c -n %{name}-%{version}
 %remove_java_binaries
-%patch0 -b .sav
+%patch1 -b .sav
 
 %build
 [ -z "$JAVA_HOME" ] && export JAVA_HOME=%{_jvmdir}/java 
