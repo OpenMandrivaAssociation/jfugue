@@ -34,7 +34,7 @@
 
 Name:		jfugue
 Version:	3.2
-Release:	%mkrel 5
+Release:	%mkrel 6
 Epoch:		0
 Summary:        Java API for programming music
 License:        LGPL
