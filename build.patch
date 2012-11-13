@@ -1,0 +1,11 @@
+--- build.xml.sav	2007-03-07 23:54:08.000000000 +0100
++++ build.xml	2007-12-01 19:59:32.000000000 +0100
+@@ -17,7 +17,7 @@
+   <target name="compile" depends="init"
+         description="compile the source " >
+     <!-- Compile the java code from ${src} into ${build} -->
+-    <javac srcdir="${src}" destdir="${build}"/>
++    <javac source="1.5" srcdir="${src}" destdir="${build}"/>
+   </target>
+ 
+   <target name="dist" depends="compile"
