@@ -38,7 +38,7 @@ Release:	%mkrel 6
 Epoch:		0
 Summary:        Java API for programming music
 License:        LGPL
-Url:            http://www.jfugue.org/
+Url:            https://www.jfugue.org/
 Group:		Development/Java
 #
 Source0:        http://www.jfugue.org/jfugue-source.zip
